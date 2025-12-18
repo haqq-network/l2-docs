@@ -4,9 +4,9 @@
  * Modify the docusaurus.config.js file at your site's root instead.
  */
 export default {
-  "title": "Documentation Template",
-  "tagline": "A modern documentation site built with Docusaurus",
-  "url": "https://your-docs-site.com",
+  "title": "HAQQ L2 Documentation",
+  "tagline": "HAQQ L2 is a scalable and interoperable Ethereum L2, built on HAQQ Network.",
+  "url": "https://l2-docs.haqq.network",
   "baseUrl": "/",
   "onBrokenLinks": "throw",
   "favicon": "img/favicon.ico",
@@ -19,6 +19,22 @@ export default {
     "path": "i18n",
     "localeConfigs": {}
   },
+  "customFields": {
+    "project": {
+      "name": "HAQQ Network",
+      "short_name": "HAQQ",
+      "denom": "ETH",
+      "ticker": "ETH",
+      "binary": "haqqd",
+      "testnet_denom": "ETH",
+      "testnet_ticker": "ETH",
+      "rpc_url": "https://explorer.ethiq.haqq.network/",
+      "rpc_url_testnet": "https://explorer.testethiq.haqq.network/",
+      "testnet_chain_id": "853211",
+      "block_explorer_url": "https://explorer.ethiq.haqq.network/",
+      "eth_name": "Ethereum"
+    }
+  },
   "presets": [
     [
       "classic",
@@ -26,7 +42,7 @@ export default {
         "docs": {
           "sidebarPath": "/private/var/www/haqq/l2-docs/sidebars.js",
           "breadcrumbs": true,
-          "editUrl": "https://github.com/your-org/your-repo/tree/main/"
+          "editUrl": "https://github.com/haqq-network/docs/tree/master/"
         },
         "blog": false,
         "theme": {
@@ -52,21 +68,44 @@ export default {
     null
   ],
   "themeConfig": {
+    "metadata": [
+      {
+        "name": "keywords",
+        "content": "HAQQ, blockchain, ethereum, proof of stake, validator, documentation, islamic blockchain, L2"
+      },
+      {
+        "name": "description",
+        "content": "HAQQ L2 is a scalable and interoperable Ethereum L2 blockchain. Explore our comprehensive documentation."
+      },
+      {
+        "property": "og:title",
+        "content": "HAQQ L2 Documentation - Ethereum Compatible L2 Platform"
+      },
+      {
+        "property": "og:description",
+        "content": "HAQQ L2 is a scalable and interoperable Ethereum L2 blockchain. Explore our comprehensive documentation."
+      },
+      {
+        "name": "sitemap",
+        "content": "/sitemap.xml"
+      }
+    ],
     "navbar": {
-      "title": "Documentation",
+      "title": "",
       "logo": {
-        "alt": "Logo",
-        "src": "img/logo.svg"
+        "alt": "HAQQ Network",
+        "src": "img/haqq-logo.svg",
+        "srcDark": "img/haqq-logo-white.svg"
       },
       "items": [
         {
           "type": "docSidebar",
           "sidebarId": "tutorialSidebar",
           "position": "left",
-          "label": "Docs"
+          "label": "Example Doc"
         },
         {
-          "href": "https://github.com/your-org/your-repo",
+          "href": "https://github.com/haqq-network/haqq",
           "label": "GitHub",
           "position": "right"
         }
@@ -74,14 +113,13 @@ export default {
       "hideOnScroll": false
     },
     "footer": {
-      "style": "dark",
       "links": [
         {
           "title": "Docs",
           "items": [
             {
-              "label": "Documentation",
-              "to": "/docs/intro"
+              "href": "/docs/intro",
+              "label": "Introduction"
             }
           ]
         },
@@ -89,13 +127,26 @@ export default {
           "title": "Community",
           "items": [
             {
-              "label": "GitHub",
-              "href": "https://github.com/your-org/your-repo"
+              "label": "HAQQ Network Discord",
+              "href": "https://discord.gg/CDtXuQG3Vd"
+            },
+            {
+              "label": "Islamic Coin Discord",
+              "href": "https://discord.gg/islamiccoin"
+            },
+            {
+              "label": "Twitter",
+              "href": "https://twitter.com/The_HaqqNetwork"
+            },
+            {
+              "href": "https://github.com/haqq-network/haqq",
+              "label": "GitHub"
             }
           ]
         }
       ],
-      "copyright": "Copyright © 2025 Your Project Name"
+      "copyright": "Copyright © 2025 HAQQ Network",
+      "style": "light"
     },
     "prism": {
       "theme": {
@@ -347,6 +398,7 @@ export default {
         "powershell",
         "shell-session",
         "bash",
+        "solidity",
         "typescript",
         "toml",
         "yaml",
@@ -380,7 +432,6 @@ export default {
         "groupByYear": true
       }
     },
-    "metadata": [],
     "tableOfContents": {
       "minHeadingLevel": 2,
       "maxHeadingLevel": 3
@@ -413,7 +464,6 @@ export default {
   "staticDirectories": [
     "static"
   ],
-  "customFields": {},
   "themes": [],
   "scripts": [],
   "headTags": [],

@@ -1,18 +1,13 @@
-# Welcome
+---
+sidebar_position: 1
+---
 
-Welcome to the documentation template!
+# Introduction to HAQQ L2
 
-This is a Docusaurus-based documentation site template that you can customize for your project.
+HAQQ L2 is a scalable and interoperable Ethereum L2 blockchain.
 
-## Getting Started
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 
-Start by editing this page to add your own content.
+## Why HAQQ L2?
 
-## Features
-
-- Built with Docusaurus 3.9.2
-- TypeScript support
-- Tailwind CSS integration
-- Modern React 19
-- Dark mode support
-
+Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.

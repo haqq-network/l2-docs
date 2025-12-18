@@ -1,0 +1,23 @@
+{
+  "id": "lorem-ipsum",
+  "title": "Lorem Ipsum Example",
+  "description": "Section 1",
+  "source": "@site/docs/lorem-ipsum.md",
+  "sourceDirName": ".",
+  "slug": "/lorem-ipsum",
+  "permalink": "/docs/lorem-ipsum",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/haqq-network/docs/tree/master/docs/lorem-ipsum.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "sidebar_position": 2
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Introduction to HAQQ L2",
+    "permalink": "/docs/intro"
+  }
+}

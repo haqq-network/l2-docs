@@ -1,16 +1,23 @@
 {
   "id": "intro",
-  "title": "Welcome",
-  "description": "Welcome to the documentation template!",
+  "title": "Introduction to HAQQ L2",
+  "description": "HAQQ L2 is a scalable and interoperable Ethereum L2 blockchain.",
   "source": "@site/docs/intro.md",
   "sourceDirName": ".",
   "slug": "/intro",
   "permalink": "/docs/intro",
   "draft": false,
   "unlisted": false,
-  "editUrl": "https://github.com/your-org/your-repo/tree/main/docs/intro.md",
+  "editUrl": "https://github.com/haqq-network/docs/tree/master/docs/intro.md",
   "tags": [],
   "version": "current",
-  "frontMatter": {},
-  "sidebar": "tutorialSidebar"
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1
+  },
+  "sidebar": "tutorialSidebar",
+  "next": {
+    "title": "Lorem Ipsum Example",
+    "permalink": "/docs/lorem-ipsum"
+  }
 }

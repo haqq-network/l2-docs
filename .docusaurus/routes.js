@@ -39,19 +39,25 @@ export default [
   },
   {
     path: '/docs/',
-    component: ComponentCreator('/docs/', 'f51'),
+    component: ComponentCreator('/docs/', '37e'),
     routes: [
       {
         path: '/docs/',
-        component: ComponentCreator('/docs/', 'f03'),
+        component: ComponentCreator('/docs/', 'ee0'),
         routes: [
           {
             path: '/docs/',
-            component: ComponentCreator('/docs/', '27a'),
+            component: ComponentCreator('/docs/', 'b6e'),
             routes: [
               {
                 path: '/docs/intro/',
                 component: ComponentCreator('/docs/intro/', 'e44'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/lorem-ipsum/',
+                component: ComponentCreator('/docs/lorem-ipsum/', '18f'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               }

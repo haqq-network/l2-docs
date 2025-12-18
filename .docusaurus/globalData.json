@@ -14,6 +14,11 @@
               "id": "intro",
               "path": "/docs/intro",
               "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "lorem-ipsum",
+              "path": "/docs/lorem-ipsum",
+              "sidebar": "tutorialSidebar"
             }
           ],
           "draftIds": [],
