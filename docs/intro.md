@@ -17,7 +17,7 @@ HAQQ Network L2 is a Layer 2 solution that extends the capabilities of the HAQQ 
 
 ## Getting Started
 
-To get started with HAQQ L2, check out the [L2 Network documentation](./l2-network/) for detailed information about:
+To get started with HAQQ L2, check out the [L2 Network documentation](../l2-network/) for detailed information about:
 
 - Network parameters and configuration
 - Contract addresses
@@ -26,4 +26,4 @@ To get started with HAQQ L2, check out the [L2 Network documentation](./l2-netwo
 
 ## Testnet
 
-The HAQQ L2 testnet (Testethiq) is currently available for testing and development. See the [L2 Network](./l2-network/) section for network details and connection information.
+The HAQQ L2 testnet (Testethiq) is currently available for testing and development. See the [L2 Network](../l2-network/) section for network details and connection information.

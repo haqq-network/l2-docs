@@ -113,7 +113,7 @@ export default {
     "navbar": {
       "title": "",
       "logo": {
-        "alt": "HAQQ Network",
+        "alt": "ETHIQ",
         "src": "img/ethiq-logo.svg",
         "srcDark": "img/ethiq-logo.svg"
       },
