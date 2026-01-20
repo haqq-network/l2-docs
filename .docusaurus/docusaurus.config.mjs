@@ -68,6 +68,26 @@ export default {
     null
   ],
   "themeConfig": {
+    "colorMode": {
+      "defaultMode": "dark",
+      "disableSwitch": false,
+      "respectPrefersColorScheme": false
+    },
+    "algolia": {
+      "appId": "XACAKO6XLW",
+      "apiKey": "d30587dac55c28a41cd6aa97878d6e23",
+      "indexName": "Haqq Network Documentation",
+      "contextualSearch": true,
+      "searchParameters": {},
+      "searchPagePath": "search",
+      "insights": false,
+      "askAi": {
+        "assistantId": "FL4BAnVxGzJD",
+        "indexName": "Haqq Network Documentation",
+        "apiKey": "d30587dac55c28a41cd6aa97878d6e23",
+        "appId": "XACAKO6XLW"
+      }
+    },
     "metadata": [
       {
         "name": "keywords",
@@ -145,7 +165,7 @@ export default {
           ]
         }
       ],
-      "copyright": "Copyright © 2025 HAQQ Network",
+      "copyright": "Copyright © 2026 HAQQ Network",
       "style": "light"
     },
     "prism": {
@@ -414,11 +434,6 @@ export default {
           }
         }
       ]
-    },
-    "colorMode": {
-      "defaultMode": "light",
-      "disableSwitch": false,
-      "respectPrefersColorScheme": false
     },
     "docs": {
       "versionPersistence": "localStorage",

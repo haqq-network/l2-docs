@@ -1,38 +1,9 @@
 @import "tailwindcss";
 @plugin "@tailwindcss/typography";
 
-@theme {
-  --font-family-sans: var(--guise-font);
-  --font-family-serif: var(--clash-font);
-  
-  --color-haqq-black: #0D0D0E;
-  --color-haqq-orange: #EC5728;
-  --color-haqq-light-orange: #FF8D69;
-}
-
-@font-face {
-  font-family: 'Clash Display';
-  src: url('/fonts/ClashDisplay-Medium.woff2') format('woff2'),
-    url('/fonts/ClashDisplay-Medium.woff') format('woff');
-  font-weight: 500;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'HK Guise';
-  src: url('/fonts/hk_guise_medium-webfont.woff2') format('woff2'),
-    url('/fonts/hk_guise_medium-webfont.woff') format('woff');
-  font-weight: 500;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'HK Guise';
-  src: url('/fonts/hk_guise_regular-webfont.woff2') format('woff2'),
-    url('/fonts/hk_guise_regular-webfont.woff') format('woff');
-  font-weight: 400;
-  font-style: normal;
-}
+/* =============================================================================
+   ETHIQ Color Variables
+   ============================================================================= */
 
 :root {
   /* Base fonts with fallbacks */
@@ -42,39 +13,116 @@
   --font-emoji: 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
   --font-family-base: var(--font-apple), var(--font-fallback), var(--font-emoji);
 
-  --guise-font: 'HK Guise', var(--font-family-base);
-  --clash-font: 'Clash Display', var(--font-family-base);
+  --satoshi-font: 'Satoshi', var(--font-family-base);
 
-  --ifm-color-primary: #ec5728;
-  --ifm-color-primary-dark: #e44614;
-  --ifm-color-primary-darker: #d84213;
-  --ifm-color-primary-darkest: #b23610;
-  --ifm-color-primary-light: #ed6135;
-  --ifm-color-primary-lighter: #ee6b41;
-  --ifm-color-primary-lightest: #ef754e;
-  --ifm-background-color: #ffffff;
-  --ifm-background-surface-color: var(--ifm-background-color);
-  --ifm-navbar-background-color: var(--ifm-background-color);
-  --ifm-footer-background-color: var(--ifm-background-color);
-  --ifm-toc-border-color: #0d0d0e3d;
-  --ifm-heading-font-family: var(--clash-font);
+  /* ETHIQ Background colors */
+  --ethiq-bg: #121212;
+  --ethiq-bg-card: #161616;
+  --ethiq-bg-nav: #141414;
+  --ethiq-bg-button-primary: #f5f5f5;
+
+  /* ETHIQ Border colors */
+  --ethiq-border: #5b5b5b;
+  --ethiq-border-light: rgba(91, 91, 91, 0.5);
+  --ethiq-border-lighter: rgba(91, 91, 91, 0.3);
+
+  /* ETHIQ Text colors */
+  --ethiq-text-muted: rgba(255, 255, 255, 0.6);
+  --ethiq-text-dim: rgba(255, 255, 255, 0.27);
+  --ethiq-text-gray: #bbbbbb;
+
+  /* Docusaurus variables - using ETHIQ colors */
+  --ifm-color-primary: var(--ethiq-bg-button-primary);
+  --ifm-color-primary-dark: #e0e0e0;
+  --ifm-color-primary-darker: #d0d0d0;
+  --ifm-color-primary-darkest: #b0b0b0;
+  --ifm-color-primary-light: #fafafa;
+  --ifm-color-primary-lighter: #ffffff;
+  --ifm-color-primary-lightest: #ffffff;
+  --ifm-background-color: var(--ethiq-bg);
+  --ifm-background-surface-color: var(--ethiq-bg-card);
+  --ifm-navbar-background-color: var(--ethiq-bg-nav);
+  --ifm-footer-background-color: var(--ethiq-bg-nav);
+  --ifm-toc-border-color: var(--ethiq-border-light);
+  --ifm-heading-font-family: var(--satoshi-font);
+  --ifm-font-family-base: var(--satoshi-font);
+  --ifm-font-color-base: #ffffff;
+  --ifm-font-color-secondary: var(--ethiq-text-muted);
 }
 
-/* For readability concerns, you should choose a lighter palette in dark mode. */
+@theme {
+  --font-family-sans: 'Satoshi', system-ui, -apple-system, sans-serif;
+  
+  /* Expose ETHIQ colors to Tailwind */
+  --color-ethiq-bg: var(--ethiq-bg);
+  --color-ethiq-card: var(--ethiq-bg-card);
+  --color-ethiq-nav: var(--ethiq-bg-nav);
+  --color-ethiq-border: var(--ethiq-border);
+  --color-ethiq-border-light: var(--ethiq-border-light);
+  --color-ethiq-border-lighter: var(--ethiq-border-lighter);
+  --color-ethiq-text-muted: var(--ethiq-text-muted);
+  --color-ethiq-text-dim: var(--ethiq-text-dim);
+  --color-ethiq-text-gray: var(--ethiq-text-gray);
+  --color-ethiq-button-primary: var(--ethiq-bg-button-primary);
+}
+
+/* =============================================================================
+   Font Face Declarations
+   ============================================================================= */
+
+@font-face {
+  font-family: 'Satoshi';
+  src: url('/fonts/Satoshi-normal-400-100.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Satoshi';
+  src: url('/fonts/Satoshi Medium-normal-500-100.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Dark theme (default for ETHIQ design) */
 html[data-theme='dark'] {
-  --ifm-color-primary: #ec5728;
-  --ifm-color-primary-dark: #eb4d1b;
-  --ifm-color-primary-darker: #e44614;
-  --ifm-color-primary-darkest: #d84213;
-  --ifm-color-primary-light: #ee6b41;
-  --ifm-color-primary-lighter: #ef754e;
-  --ifm-color-primary-lightest: #f39274;
-  --ifm-background-color: #0d0d0e;
-  --ifm-toc-border-color: #ffffff3d;
+  --ifm-color-primary: var(--ethiq-bg-button-primary);
+  --ifm-color-primary-dark: #e0e0e0;
+  --ifm-color-primary-darker: #d0d0d0;
+  --ifm-color-primary-darkest: #b0b0b0;
+  --ifm-color-primary-light: #fafafa;
+  --ifm-color-primary-lighter: #ffffff;
+  --ifm-color-primary-lightest: #ffffff;
+  --ifm-background-color: var(--ethiq-bg);
+  --ifm-background-surface-color: var(--ethiq-bg-card);
+  --ifm-navbar-background-color: var(--ethiq-bg-nav);
+  --ifm-footer-background-color: var(--ethiq-bg-nav);
+  --ifm-toc-border-color: var(--ethiq-border-light);
+  --ifm-font-color-base: #ffffff;
+  --ifm-font-color-secondary: var(--ethiq-text-muted);
+}
+
+/* =============================================================================
+   Base Styles
+   ============================================================================= */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  @apply font-sans will-change-auto;
+  background-color: var(--ethiq-bg);
+  color: white;
+  font-family: var(--satoshi-font);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  @apply will-change-auto;
 }
 
 svg {
@@ -92,11 +140,13 @@ svg {
 }
 
 .markdown {
-  @apply prose max-w-none prose-headings:text-haqq-black prose-strong:text-haqq-black text-haqq-black prose-a:text-inherit prose-headings:font-serif;
+  @apply prose max-w-none prose-headings:text-white prose-strong:text-white text-white prose-a:text-inherit;
   @apply prose-table:table-auto prose-td:px-4 prose-td:py-2 prose-th:py-2 prose-th:px-4 prose-code:text-inherit;
-  @apply prose-pre:bg-[#0000000d] prose-headings:font-[500];
-  @apply prose-blockquote:text-haqq-black;
+  @apply prose-pre:bg-[#161616] prose-headings:font-[500];
+  @apply prose-blockquote:text-white prose-blockquote:border-l-[#5b5b5b];
   @apply prose-code:before:hidden prose-code:after:hidden;
+  @apply prose-headings:font-sans;
+  @apply prose-p:text-white prose-li:text-white;
 }
 
 html[data-theme='dark'] .markdown {
@@ -109,54 +159,236 @@ html[data-theme='dark'] .markdown {
 }
 
 .navbar {
-  @apply border-b border-t border-[#0D0D0E3D];
+  background-color: var(--ethiq-bg-nav) !important;
+  border-bottom: 0.5px solid var(--ethiq-border);
+  border-top: 0.5px solid var(--ethiq-border);
   @apply shadow-none;
 }
 
+.navbar__item,
+.navbar__link {
+  color: white;
+}
+
+.navbar__link:hover {
+  color: var(--ethiq-text-muted);
+}
+
 .footer {
-  @apply border-t border-[#0D0D0E3D] px-0;
+  background-color: var(--ethiq-bg-nav) !important;
+  border-top: 0.5px solid var(--ethiq-border);
+  @apply px-0;
+  color: var(--ethiq-text-muted);
 }
 
 .footer__title {
-  @apply font-serif text-lg;
+  @apply font-sans text-lg;
+  color: white;
+  font-weight: 500;
 }
+
+.footer__link-item {
+  color: var(--ethiq-text-muted);
+}
+
+.footer__link-item:hover {
+  color: white;
+}
+
+.footer__copyright {
+  @apply text-sm;
+  color: var(--ethiq-text-dim);
+}
+
 .pagination-nav__label {
-  @apply font-serif mt-3;
+  @apply font-sans mt-3;
+  color: white;
+  font-weight: 500;
 }
+
 .pagination-nav__label::before {
   @apply mr-1;
 }
+
 .pagination-nav__label::after {
   @apply ml-1;
 }
 
 html[data-theme='dark'] .footer,
 html[data-theme='dark'] .navbar {
-  @apply border-[#FFFFFF3D];
+  border-color: var(--ethiq-border);
 }
 
 a {
   transition: none;
   @apply transition-colors duration-100 ease-out;
+  color: white;
+}
+
+a:hover {
+  color: var(--ethiq-text-muted);
 }
 
 .menu__link {
   @apply py-3;
+  color: var(--ethiq-text-muted);
+}
+
+.menu__link:hover {
+  color: white;
+}
+
+.menu__link--active {
+  color: white;
 }
 
 .big-card {
-  @apply border-[1px] border-[#eaeaea] hover:border-haqq-orange text-haqq-black;
+  background-color: var(--ethiq-bg-card);
+  border: 0.5px solid var(--ethiq-border);
+  @apply text-white;
+  border-radius: 16px;
+  transition: border-color 0.3s ease;
 }
+
+.big-card:hover {
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
 html[data-theme='dark'] .big-card {
-  @apply !text-white border-[#292929] hover:border-haqq-orange;
+  @apply !text-white;
+  border-color: var(--ethiq-border);
 }
 
 .hero__title {
-  @apply font-serif font-[500] my-6;
+  @apply font-sans font-[500] my-6;
+  color: white;
 }
 
-.footer__copyright {
-  @apply text-sm;
+/* =============================================================================
+   Gradient Text Utilities
+   ============================================================================= */
+
+.gradient-text-hero {
+  background: linear-gradient(
+    99.82deg,
+    rgba(255, 255, 255, 1) 4.08%,
+    rgba(255, 255, 255, 1) 16.8%,
+    rgba(153, 153, 153, 0.36) 24.35%,
+    rgba(255, 255, 255, 1) 30.19%,
+    rgba(153, 153, 153, 0.36) 37.71%,
+    rgba(255, 255, 255, 0.79) 42.7%,
+    rgba(238, 238, 238, 0.8) 48.33%,
+    rgba(255, 255, 255, 1) 53.97%,
+    rgba(153, 153, 153, 0.34) 64.02%,
+    rgba(255, 255, 255, 1) 74.15%,
+    rgba(153, 153, 153, 0) 85.92%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gradient-text-section {
+  background: linear-gradient(
+    97.54deg,
+    rgba(255, 255, 255, 1) 3.72%,
+    rgba(255, 255, 255, 1) 16.95%,
+    rgba(153, 153, 153, 0.64) 29.21%,
+    rgba(255, 255, 255, 1) 38.7%,
+    rgba(153, 153, 153, 0.94) 48.7%,
+    rgba(255, 255, 255, 0.79) 59.01%,
+    rgba(238, 238, 238, 0.8) 68.15%,
+    rgba(255, 255, 255, 1) 77.3%,
+    rgba(153, 153, 153, 0.57) 93.63%,
+    rgba(255, 255, 255, 1) 110.09%,
+    rgba(153, 153, 153, 0) 129.2%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* =============================================================================
+   Scrollbar Styling
+   ============================================================================= */
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--ethiq-bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #333;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #444;
+}
+
+/* =============================================================================
+   Docusaurus Component Overrides
+   ============================================================================= */
+
+.theme-doc-sidebar-container {
+  background-color: var(--ethiq-bg-nav);
+  border-right: 0.5px solid var(--ethiq-border);
+}
+
+.theme-doc-sidebar-menu {
+  color: var(--ethiq-text-muted);
+}
+
+.table-of-contents {
+  border-left: 0.5px solid var(--ethiq-border-light);
+}
+
+.table-of-contents__link {
+  color: var(--ethiq-text-muted);
+}
+
+.table-of-contents__link:hover,
+.table-of-contents__link--active {
+  color: white;
+}
+
+.card {
+  background-color: var(--ethiq-bg-card);
+  border: 0.5px solid var(--ethiq-border);
+  border-radius: 16px;
+  transition: border-color 0.3s ease;
+}
+
+.card:hover {
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+.button {
+  background-color: var(--ethiq-button-primary);
+  color: black;
+  font-weight: 500;
+  border-radius: 12px;
+  transition: all 0.2s ease;
+}
+
+.button:hover {
+  background-color: white;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 20px rgba(255, 255, 255, 0.15);
+}
+
+.button--secondary {
+  background-color: transparent;
+  color: white;
+  border: 0.5px solid white;
+}
+
+.button--secondary:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  transform: translateY(-1px);
 }
 
 @media (min-width: 1440px) {

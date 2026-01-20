@@ -42,6 +42,12 @@
       "plugin": "plugin---docusaurus-debug-b-38-895"
     }
   },
+  "/search/-21e": {
+    "__comp": "__comp---theme-search-page-1-a-4-d6f",
+    "__context": {
+      "plugin": "plugin---search-c-14-897"
+    }
+  },
   "/docs/-37e": {
     "__comp": "__comp---theme-docs-root-5-e-9-0b6",
     "__context": {

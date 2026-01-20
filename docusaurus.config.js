@@ -89,6 +89,11 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      colorMode: {
+        defaultMode: 'dark',
+        disableSwitch: false,
+        respectPrefersColorScheme: false,
+      },
       algolia: {
         // The application ID provided by Algolia
         appId: 'XACAKO6XLW',
