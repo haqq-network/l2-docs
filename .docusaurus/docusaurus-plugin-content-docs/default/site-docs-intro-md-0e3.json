@@ -1,7 +1,7 @@
 {
   "id": "intro",
   "title": "Introduction to HAQQ L2",
-  "description": "HAQQ L2 is a scalable and interoperable Ethereum L2 blockchain.",
+  "description": "HAQQ L2 is a scalable and interoperable Ethereum L2 blockchain built on the Optimism stack. This Layer 2 solution provides high performance and low fees for HAQQ Network users.",
   "source": "@site/docs/intro.md",
   "sourceDirName": ".",
   "slug": "/intro",
@@ -17,7 +17,7 @@
   },
   "sidebar": "tutorialSidebar",
   "next": {
-    "title": "Lorem Ipsum Example",
-    "permalink": "/docs/lorem-ipsum"
+    "title": "L2 Network",
+    "permalink": "/docs/category/l2-network"
   }
 }

@@ -1,0 +1,23 @@
+{
+  "id": "l2-network/contractaddress",
+  "title": "Contract Addresses",
+  "description": "This page contains a comprehensive list of all deployed contracts in both L1 and L2 networks of HAQQ with their addresses and explorer links. The contracts are based on OP Stack v5.0.0 from the Ethereum Optimism repository and deployed using op-deployer v0.5.0-rc2.",
+  "source": "@site/docs/l2-network/contractaddress.md",
+  "sourceDirName": "l2-network",
+  "slug": "/l2-network/contractaddress",
+  "permalink": "/docs/l2-network/contractaddress",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/haqq-network/docs/tree/master/docs/l2-network/contractaddress.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "sidebar_position": 2
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "HAQQ L2 Network",
+    "permalink": "/docs/l2-network/"
+  }
+}

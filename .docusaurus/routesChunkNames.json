@@ -48,26 +48,34 @@
       "plugin": "plugin---search-c-14-897"
     }
   },
-  "/docs/-37e": {
+  "/docs/-a13": {
     "__comp": "__comp---theme-docs-root-5-e-9-0b6",
     "__context": {
       "plugin": "plugin---docs-aba-4f5"
     }
   },
-  "/docs/-ee0": {
+  "/docs/-cb5": {
     "__comp": "__comp---theme-doc-version-roota-7-b-5de",
     "__props": "__props---docs-11-b-f70"
   },
-  "/docs/-b6e": {
+  "/docs/-64f": {
     "__comp": "__comp---theme-doc-roota-94-67a"
+  },
+  "/docs/category/l2-network/-d94": {
+    "__comp": "__comp---theme-doc-category-generated-index-page-14-e-640",
+    "__props": "__props---docs-category-l-2-network-5-da-f29"
   },
   "/docs/intro/-e44": {
     "__comp": "__comp---theme-doc-item-178-a40",
     "content": "content---docs-intro-0-e-3-7e4"
   },
-  "/docs/lorem-ipsum/-18f": {
+  "/docs/l2-network/-fca": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-lorem-ipsum-4-ff-8bd"
+    "content": "content---docs-l-2-network-46-f-b77"
+  },
+  "/docs/l2-network/contractaddress/-5e5": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-l-2-network-contractaddress-d-80-c00"
   },
   "/-e5f": {
     "__comp": "__comp---site-src-pages-index-tsx-1-df-d3e",

@@ -16,8 +16,18 @@
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "lorem-ipsum",
-              "path": "/docs/lorem-ipsum",
+              "id": "l2-network/contractaddress",
+              "path": "/docs/l2-network/contractaddress",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "l2-network/index",
+              "path": "/docs/l2-network/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "/category/l2-network",
+              "path": "/docs/category/l2-network",
               "sidebar": "tutorialSidebar"
             }
           ],

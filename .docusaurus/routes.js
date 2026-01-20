@@ -44,16 +44,22 @@ export default [
   },
   {
     path: '/docs/',
-    component: ComponentCreator('/docs/', '37e'),
+    component: ComponentCreator('/docs/', 'a13'),
     routes: [
       {
         path: '/docs/',
-        component: ComponentCreator('/docs/', 'ee0'),
+        component: ComponentCreator('/docs/', 'cb5'),
         routes: [
           {
             path: '/docs/',
-            component: ComponentCreator('/docs/', 'b6e'),
+            component: ComponentCreator('/docs/', '64f'),
             routes: [
+              {
+                path: '/docs/category/l2-network/',
+                component: ComponentCreator('/docs/category/l2-network/', 'd94'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
               {
                 path: '/docs/intro/',
                 component: ComponentCreator('/docs/intro/', 'e44'),
@@ -61,8 +67,14 @@ export default [
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/docs/lorem-ipsum/',
-                component: ComponentCreator('/docs/lorem-ipsum/', '18f'),
+                path: '/docs/l2-network/',
+                component: ComponentCreator('/docs/l2-network/', 'fca'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/l2-network/contractaddress/',
+                component: ComponentCreator('/docs/l2-network/contractaddress/', '5e5'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               }

@@ -114,16 +114,10 @@ export default {
       "title": "",
       "logo": {
         "alt": "HAQQ Network",
-        "src": "img/haqq-logo.svg",
-        "srcDark": "img/haqq-logo-white.svg"
+        "src": "img/ethiq-logo.svg",
+        "srcDark": "img/ethiq-logo.svg"
       },
       "items": [
-        {
-          "type": "docSidebar",
-          "sidebarId": "tutorialSidebar",
-          "position": "left",
-          "label": "Example Doc"
-        },
         {
           "href": "https://github.com/haqq-network/haqq",
           "label": "GitHub",

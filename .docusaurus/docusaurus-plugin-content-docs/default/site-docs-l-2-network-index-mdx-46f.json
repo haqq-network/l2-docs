@@ -1,0 +1,27 @@
+{
+  "id": "l2-network/index",
+  "title": "HAQQ L2 Network",
+  "description": "HAQQ Network L2 is a Layer 2 solution built on the Optimism stack. This solution provides high performance and low fees for HAQQ Network users.",
+  "source": "@site/docs/l2-network/index.mdx",
+  "sourceDirName": "l2-network",
+  "slug": "/l2-network/",
+  "permalink": "/docs/l2-network/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/haqq-network/docs/tree/master/docs/l2-network/index.mdx",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "L2 Network",
+    "permalink": "/docs/category/l2-network"
+  },
+  "next": {
+    "title": "Contract Addresses",
+    "permalink": "/docs/l2-network/contractaddress"
+  }
+}

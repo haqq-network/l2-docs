@@ -4,10 +4,26 @@ sidebar_position: 1
 
 # Introduction to HAQQ L2
 
-HAQQ L2 is a scalable and interoperable Ethereum L2 blockchain.
+HAQQ L2 is a scalable and interoperable Ethereum L2 blockchain built on the [Optimism](https://github.com/ethereum-optimism/optimism) stack. This Layer 2 solution provides high performance and low fees for HAQQ Network users.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+## What is HAQQ L2?
 
-## Why HAQQ L2?
+HAQQ Network L2 is a Layer 2 solution that extends the capabilities of the HAQQ Network by providing:
 
-Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+- **High Performance**: Fast transaction processing with 2-second block times
+- **Low Fees**: Gas fees under 0.1 Gwei
+- **Ethereum Compatibility**: Full compatibility with Ethereum tooling and smart contracts
+- **Scalability**: High throughput with up to 1428 transactions per second
+
+## Getting Started
+
+To get started with HAQQ L2, check out the [L2 Network documentation](./l2-network/) for detailed information about:
+
+- Network parameters and configuration
+- Contract addresses
+- Testnet access
+- Development guides
+
+## Testnet
+
+The HAQQ L2 testnet (Testethiq) is currently available for testing and development. See the [L2 Network](./l2-network/) section for network details and connection information.
