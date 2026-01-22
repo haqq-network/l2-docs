@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Sitemap: https://docs.ethiq.network/sitemap.xml
+# Algolia-Crawler-Verif: E4E61AC652284A55
+
